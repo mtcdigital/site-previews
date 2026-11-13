@@ -118,7 +118,7 @@ document.getElementById('qf').addEventListener('submit',function(e){e.preventDef
  var d=Object.fromEntries(new FormData(f));if(d._honey)return;delete d._honey;d._subject='New quote request from your website';d._template='table';d._captcha='false';
  b.disabled=true;b.textContent='Sending…';
  fetch('https://formsubmit.co/ajax/'+FORM_TO,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)})
- .then(function(){ok.style.display='block';f.reset()}).catch(function(){ok.textContent='Something went wrong. Please call or text us instead.';ok.style.display='block'})
+ .then(function(){ok.style.display='block';f.reset();window.trackLead&&trackLead()}).catch(function(){ok.textContent='Something went wrong. Please call or text us instead.';ok.style.display='block'})
  .finally(function(){b.disabled=false;b.textContent='Request My Quote'})});
 </script>
 </body></html>
