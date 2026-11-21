@@ -121,4 +121,11 @@ document.getElementById('qf').addEventListener('submit',function(e){e.preventDef
  .then(function(){ok.style.display='block';f.reset();window.trackLead&&trackLead()}).catch(function(){ok.textContent='Something went wrong. Please call or text us instead.';ok.style.display='block'})
  .finally(function(){b.disabled=false;b.textContent='Request My Quote'})});
 </script>
+<script>
+var GA_ID="G-S312T1828N",SITE="Cutting Edge",LIST="snow-removal-mi";
+(function(){if(!GA_ID)return;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);
+window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',GA_ID,{site_name:SITE,offer_list:LIST});
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"],a[href^="sms:"]');if(a)gtag('event',a.getAttribute('href').indexOf('tel:')===0?'call_click':'text_click',{site_name:SITE})},true);
+window.trackLead=function(){gtag('event','generate_lead',{site_name:SITE})}})();
+</script>
 </body></html>
