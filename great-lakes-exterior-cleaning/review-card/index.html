@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Review Cards | Great Lakes Exterior Cleaning</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,900&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Manrope,sans-serif;background:#e9eef5;color:#071a3a;padding:30px}
+.tool{max-width:900px;margin:0 auto 26px;background:#fff;border-radius:16px;padding:22px 26px;box-shadow:0 6px 20px rgba(0,0,0,.06)}
+.tool h1{font-family:Archivo;font-style:italic;font-size:28px;text-transform:uppercase}.tool p{color:#4a5a6c;margin-top:6px}
+.btn{display:inline-block;margin:12px 8px 0 0;padding:11px 18px;border-radius:99px;background:#1a8fff;color:#fff;font-weight:800;text-decoration:none;border:0;cursor:pointer;font:800 14px Manrope}
+.btn.d{background:#071a3a}
+.label{max-width:900px;margin:30px auto 10px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:12px;color:#4a5a6c}
+/* 4x6 counter card */
+.big{width:6in;height:4in;margin:0 auto;background:linear-gradient(160deg,#071a3a,#0b2a5c);color:#fff;border-radius:18px;display:grid;grid-template-columns:1fr 2.3in;gap:.25in;padding:.3in;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.big img.l{width:1in;border-radius:50%}.big h2{font-family:Archivo;font-style:italic;font-size:30px;line-height:1;text-transform:uppercase;margin:.12in 0 .08in}
+.big .s{color:#ffc93c;font-size:22px;letter-spacing:3px}.big p{color:#c9dcf5;font-size:13px;margin-top:.06in}
+.qrbox{background:#fff;border-radius:14px;padding:.12in;text-align:center}.qrbox img{width:100%}.qrbox b{display:block;color:#071a3a;font-size:12px;margin-top:2px}
+/* business cards 3.5x2 */
+.sheet{width:7.5in;margin:0 auto;display:grid;grid-template-columns:3.5in 3.5in;gap:.2in;justify-content:center}
+.bc{width:3.5in;height:2in;background:#fff;border-radius:10px;border:1px dashed #b9c7da;display:grid;grid-template-columns:1fr 1.35in;gap:.1in;padding:.14in;align-items:center}
+.bc .t{font-family:Archivo;font-style:italic;font-size:17px;line-height:1.02;text-transform:uppercase}.bc .s{color:#f5b300;letter-spacing:2px;font-size:14px}
+.bc p{font-size:9.5px;color:#4a5a6c;margin-top:3px}.bc img.l{width:.5in;border-radius:50%;margin-bottom:3px}.bc .q img{width:100%}
+.msg{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.bub{background:#fff;border-radius:16px;padding:18px;box-shadow:0 6px 20px rgba(0,0,0,.06)}.bub b{display:block;margin-bottom:8px}
+.bub div{background:#1a8fff;color:#fff;border-radius:16px 16px 4px 16px;padding:12px 14px;font-size:14px;line-height:1.5}
+.warn{max-width:900px;margin:22px auto 0;background:#fff6db;border:1px solid #f3d27a;border-radius:14px;padding:14px 18px;font-size:14px}
+@media print{body{background:#fff;padding:0}.tool,.msg,.warn,.label.np{display:none}.label{display:none}.big{box-shadow:none;page-break-after:always;-webkit-print-color-adjust:exact;print-color-adjust:exact}.sheet{margin-top:.3in}.bc{-webkit-print-color-adjust:exact}}
+@media(max-width:700px){.msg{grid-template-columns:1fr}.big,.sheet{transform:scale(.55);transform-origin:top left}}
+</style></head><body>
+<div class="tool"><h1>⭐ Your Google review kit</h1>
+<p>Scan the code → it opens Google straight to the "leave a review" box for Great Lakes Exterior Cleaning. No searching.</p>
+<button class="btn" onclick="window.print()">🖨️ Print cards</button>
+<a class="btn d" href="review-qr.png" download>⬇️ Download QR image</a>
+<a class="btn d" href="https://search.google.com/local/writereview?placeid=ChIJVZhfvji1IogRRTgaqYdUWSw" target="_blank">🔗 Test the review link</a></div>
+
+<div class="label">1 · Counter / clipboard / truck card (4×6)</div>
+<div class="big"><div><img class="l" src="logo.png" alt=""><h2>Happy with the job?</h2><div class="s">★★★★★</div>
+<p>Scan to leave us a quick Google review. It takes 30 seconds and it's the #1 way neighbors find a local crew they can trust.</p>
+<p style="color:#fff;font-weight:800;margin-top:.1in">Thank you! · (517) 386-0664</p></div>
+<div class="qrbox"><img src="review-qr.svg" alt="Google review QR code"><b>Point your phone camera here</b></div></div>
+
+<div class="label">2 · Leave-behind cards (print on cardstock, cut on the dashed lines)</div>
+<div class="sheet" id="sheet"></div>
+
+<div class="label np">3 · Text to send the same day the job is done</div>
+<div class="msg">
+<div class="bub"><b>Same-day text (copy &amp; paste)</b><div>Hey [Name], thanks again for having us out today! If you're happy with how it turned out, would you mind leaving us a quick Google review? It really helps a small local business like ours. Here's the link: https://search.google.com/local/writereview?placeid=ChIJVZhfvji1IogRRTgaqYdUWSw</div></div>
+<div class="bub"><b>3-day follow up (only if they haven't)</b><div>Hey [Name], hope the place still looks great! Just a friendly reminder on that Google review whenever you have a sec. Thanks so much 🙏 https://search.google.com/local/writereview?placeid=ChIJVZhfvji1IogRRTgaqYdUWSw</div></div>
+</div>
+<div class="warn">⚠️ <b>Google's rule:</b> never offer anything for a review (discounts, lunch, gift cards, entries). Google can delete the reviews or flag the profile. Just ask every happy customer, every time. That works.</div>
+<script>
+var c='<div class="bc"><div><img class="l" src="logo.png" alt=""><div class="t">Thanks for choosing us!</div><div class="s">★★★★★</div><p>Scan to leave a quick Google review. It helps a local business more than you know.</p><p><b style="color:#071a3a">Great Lakes Exterior Cleaning · (517) 386-0664</b></p></div><div class="q"><img src="review-qr.svg" alt="QR"></div></div>';
+document.getElementById('sheet').innerHTML=c.repeat(8);
+</script></body></html>
